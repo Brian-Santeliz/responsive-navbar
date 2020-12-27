@@ -31,7 +31,7 @@ ul li > a:hover{
     border-bottom: 5px solid rgb(191, 193, 197);
 }
 li {
-    display: inline-block;
+    display:inline-block;
     margin:10px;
 }
 .logo{
@@ -63,7 +63,7 @@ li {
 .toggle-btn{
     position: absolute;
     right: 1rem;
-    display:flex;
+    display:none;
     flex-direction: column;
     justify-content: space-evenly;
     width: 50px;
@@ -75,9 +75,20 @@ li {
     background-color: #fff;
     border-radius: 10px;
 }
-@media screen and ( min-width:680px){
+@media screen and ( min-width:697px){
     .about-section{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+}
+@media screen and (max-width:697px){
+    li{
+        display: none;
+    }
+    .toggle-btn{
+        display:flex;
+    } 
+    .navbar{
+        flex-direction: column;
+    } 
 }
