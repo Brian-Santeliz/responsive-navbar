@@ -37,8 +37,25 @@ li {
     margin:1em auto;
     max-width: 1200px;
 }
-.about-section{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+.img{
+    text-align: center;
+}
+.container .about-section .img img{
+    height: 300px;
+    border-radius: 90%;
+}
+.about-title{
+    text-align: center;
 }
 
+ .paragraph{
+    line-height: 60px;
+    text-align: center;
+}
+@media screen and ( min-width:680px){
+    .about-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
