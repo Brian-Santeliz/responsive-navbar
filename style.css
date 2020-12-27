@@ -9,29 +9,35 @@ body{
     font-size: 2rem;
 }
 .navbar{
-    background:#999;
+    background:#333;
     padding: 1em 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color:#fff
+
 }
 ul li {
     list-style: none;
 }
-a{
+ul li > a{
     text-decoration: none;
-    color:#000
-}
-a:hover{
     color:#fff;
-    border-bottom: 5px solid rgb(12, 21, 39);
+    padding:1rem;
+
+}
+ul li > a:hover{
+    color:rgb(165, 160, 160);
+    border-bottom: 5px solid rgb(191, 193, 197);
 }
 li {
     display: inline-block;
     margin:10px;
 }
 .logo{
-    margin-left: 1em;
+    margin: 1rem;
+    color:#fff;
+    font-size: 1.5em;
 }
 .container{
     margin:1em auto;
@@ -52,6 +58,22 @@ li {
  .paragraph{
     line-height: 60px;
     text-align: center;
+}
+/* Menu Hambuerguesa */
+.toggle-btn{
+    position: absolute;
+    right: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 40px;
+}
+.toggle-btn .line{
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 @media screen and ( min-width:680px){
     .about-section{
