@@ -8,20 +8,20 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Brian Webs</div>
-        <a href="#" class="toggle-btn">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
+        <div class="brand-title">Brian Webs</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </a>
-        <div class="links">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-       </div>
-    </nav>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     <div class="container">
         <div class="about-section">
             <div class="img">
@@ -32,5 +32,13 @@
                 <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima nisi dolores consequuntur minus hic, ipsa suscipit accusamus sapiente similique laboriosam.</p>
             </div>
         </div>
+        <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+console.log(navbarLinks)
+    toggleButton.addEventListener('click', () => {
+      navbarLinks.classList.toggle('active')
+    })
+        </script>
 </body>
 </html>
